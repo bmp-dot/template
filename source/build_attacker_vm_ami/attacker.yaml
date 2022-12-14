@@ -1,0 +1,30 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Build a Attacker VM with CloudFormation
+
+Parameters:
+  SSHKey:
+    Type: AWS::EC2::KeyPair::KeyName
+    Default: GTS2022-AttackerVM
+    Description: Select your key pair
+
+Resources:
+  AttackerInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId:  ami-0e871162fe56447f0
+      InstanceType: t2.micro
+      KeyName: !Ref SSHKey
+      SubnetId: subnet-7daddc27
+      SecurityGroupIds: 
+        - sg-08f85f6fc233d0908
+      Tags:
+        -
+          Key: Name
+          Value: !Join ['-',[!Sub '${AWS::StackName}', 'gts2022']]
+
+Outputs:
+  PublicIp:
+    Description: Public IP
+    Value: !GetAtt AttackerInstance.PublicIp
+    Export:
+      Name: !Sub "${AWS::StackName}-PublicIp"
