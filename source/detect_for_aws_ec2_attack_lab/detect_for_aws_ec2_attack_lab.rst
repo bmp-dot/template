@@ -41,7 +41,7 @@ Setup Cloudgoat
 
    ~/cloudgoat/cloudgoat.py config profile
 
-- Run Cloudgoat config whitlelist 
+- Modify Cloudgoat config whitlelist 
 
 .. code:: console
 
