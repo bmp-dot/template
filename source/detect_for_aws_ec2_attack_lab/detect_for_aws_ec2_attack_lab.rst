@@ -45,7 +45,7 @@ Setup Cloudgoat
 
 .. code:: console
 
-   ~/cloudgoat/cloudgoat.py config whitelist --auto
+   echo "`curl ifconfig.io`/32" > ~/cloudgoat/whitelist.txt
 
 
 Create vulnerable infrastructure
