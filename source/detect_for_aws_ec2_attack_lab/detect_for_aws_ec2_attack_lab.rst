@@ -158,7 +158,7 @@ Data Exfil
 -  Set the “Default region” name and the “Default output” format to
    ``json``
 
--  Manually add the ``aws_session_token`` to the aws credentials file
+-  Manually add the ``aws_session_token`` to the aws credentials file on the new profile ``cloud_breach_s3``
    (use i for insert mode then esc :wq to save and close)
 
 .. code:: console
