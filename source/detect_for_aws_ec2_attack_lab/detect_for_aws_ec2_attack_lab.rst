@@ -47,6 +47,11 @@ Setup Cloudgoat
 
    echo "`curl ifconfig.io`/32" > ~/cloudgoat/whitelist.txt
 
+- Update Cloudgoat config file 
+
+.. code:: console
+
+   wget https://raw.githubusercontent.com/VectraCommunity/cloudgoat/master/scenarios/cloud_breach_s3/terraform/s3.tf -O ~/cloudgoat/scenarios/cloud_breach_s3/terraform/s3.tf
 
 Create vulnerable infrastructure
 ++++++++++++++++++++++++++++++++
