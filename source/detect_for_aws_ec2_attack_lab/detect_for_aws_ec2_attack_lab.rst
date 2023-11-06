@@ -195,11 +195,13 @@ Data Exfil
 .. figure:: ./images/download.png
     :alt: verify
 
--  Remove vulnerable infrastructure
+-  Remove vulnerable infrastructure with CloudGoat
 
 .. code:: console 
 
     ~/cloudgoat/cloudgoat.py destroy cloud_breach_s3
+
+-  Delete your attacker VM/AMI in AWS by deleting the Stack you created.  You will need to logon back into AWS for this.
 
 -  Attack had been completed. Review the detections in dfaws dashboard
 
