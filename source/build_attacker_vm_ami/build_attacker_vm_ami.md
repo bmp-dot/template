@@ -15,7 +15,7 @@ To create a key pair search "key pairs" in the AWS
 
     ![CDM](./images/cdm.png)
 
-2.  Fill our the required fields on the Basic page that don't have defaults
+2.  Fill out the required fields on the Basic page that don't have defaults
  - Cluster Name
  - Subscription ID
  - Deployment Resource Group Nam
@@ -23,9 +23,13 @@ To create a key pair search "key pairs" in the AWS
 
     ![CDM Basic](./images/cdm_basic.png)
 
-3.  On the Create key pairs page name your key **GTS2022-AttackerVM-INITIALS**
+3.  On the Network Configuration page change "Create Vnet and Subnet" to **yes**
 
-4.  For Key pair type choose **RSA** (default)
+    ![CDM Network](./images/cdm_network.png)
+
+4.  On the Security Configuration page change Create Network Security Group to **yes** 
+
+    ![CDM Security](./images/cdm.png)
 
 5.  For Private key file format choose the appropriate type for your SSH client
 
