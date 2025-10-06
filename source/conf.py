@@ -97,7 +97,7 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 html_static_path = ['_static']
 
 
-html_logo = "_static/WEKA_logo.svg"
+html_logo = "_static/WEKA_logo.png"
 html_favicon = "_static/favicon.ico"
 
 html_css_files = [
