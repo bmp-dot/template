@@ -15,9 +15,13 @@ To create a key pair search "key pairs" in the AWS
 
     ![CDM](./images/cdm.png)
 
-2.  On the Key pairs page press **Create key pair** on the top right
+2.  Fill our the required fields on the Basic page that don't have defaults
+ - Cluster Name
+ - Subscription ID
+ - Deployment Resource Group Nam
+ - Vnet Resource Group Name
 
-    ![CreateKeyPair](./images/createkeypair.png)
+    ![CDM Basic](./images/cdm_basic.png)
 
 3.  On the Create key pairs page name your key **GTS2022-AttackerVM-INITIALS**
 
