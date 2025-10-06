@@ -1,13 +1,10 @@
 # Build Attacker VM AMI
 
 ## Overview
-We created an AMI with the attacker tools pre installed.  This includes aws cli, terraform. cloudgoat, pacu, and their dependencies.  This AMI is available in a CloudFormation template [here](attacker.yaml).  This AMI can be used to run any of the AWS control plane attack scenarios.  The AMI is already setup with the Vectra SSO profile for aws cli.
+We created an AMI with the attacker tools pre installed.  This includes aws cli, terraform. cloudgoat, pacu, and their dependencies.  This AMI is available in a CloudFormation template   This AMI can be used to run any of the AWS control plane attack scenarios.  The AMI is already setup with the Vectra SSO profile for aws cli.
 
 ## Notes 
-- The AMI is private and only available in the vectra-se-dev (257321424819) account
-- The AMI is only available in us-west2
-- The AMI is based on Ubuntu 
-- The Attacker VM must be in a different AWS account than the target 
+- The AMI is private and only available in the  account
 
 ##  Creating a Key Pair 
 The EC2 instance created by the CloudFormation template requires a key pair.  Before launching the CFT stack a key pair should be created.  
