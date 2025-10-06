@@ -3,3 +3,4 @@ sphinx-bootstrap-theme
 sphinx-fontawesome
 sphinxcontrib-fulltoc
 sphinx_copybutton
+myst-parser
