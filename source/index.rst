@@ -1,7 +1,7 @@
 .. role:: html(raw)
    :format: html
 
-.. title:: CDR for AWS: EC2 Attack
+.. title:: WEKA: DR Recovery Lab
 
 
 .. toctree::
@@ -27,9 +27,9 @@
 Welcome!
 --------------------------------
 
-Welcome to the CDR for AWS EC2 Attack Lab!
+Welcome to the WEKA DR recovery lab
 
-During this lab you will you will work through show to initiate a EC2 Attack, and how we detect it with Vectra Detection and Response.
+During this lab you will you will work through restoring a WEKA cluster from Snap2Obj
 
 What's new
 ==========

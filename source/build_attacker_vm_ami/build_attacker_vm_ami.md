@@ -1,4 +1,4 @@
-# Build Attacker VM AMI
+# Create Azure Cluster
 
 ## Overview
 We created an AMI with the attacker tools pre installed.  This includes aws cli, terraform. cloudgoat, pacu, and their dependencies.  This AMI is available in a CloudFormation template   This AMI can be used to run any of the AWS control plane attack scenarios.  The AMI is already setup with the Vectra SSO profile for aws cli.
@@ -33,7 +33,7 @@ To create a key pair search "key pairs" in the AWS
 ##  Creating Attacker VM from CloudFormation Template
 Now that we have a key pair we are ready to start the CFT stack.
 
-1.  First download the CFT [here](attacker.yaml)
+1.  First download the CFT [here](remove.yaml)
 
 2.  In the AWS Management Console navigate to the **CFT Stacks** page by typing **stacks** in the search field and choose the stacks CloudFormation feature
 
