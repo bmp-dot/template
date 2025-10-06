@@ -21,9 +21,9 @@ import sphinx_fontawesome
 
 # -- Project information -----------------------------------------------------
 
-project = 'Vectra AI HOLs'
-copyright = '2022, Vectra AI'
-author = 'Vectra Enablement'
+project = 'WEKA HOLs'
+copyright = '2025, WEKA'
+author = 'WEKA Enablement'
 
 # The full version, including alpha/beta/rc tags
 release = '1.0.0'
@@ -119,7 +119,7 @@ html_show_sphinx = False
 
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
-    'navbar_title': "Hands-On Labs",
+    'navbar_title': "Hands On Labs",
 
     # Tab name for entire site. (Default: "Site")
     

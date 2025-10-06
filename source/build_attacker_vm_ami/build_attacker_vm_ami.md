@@ -63,4 +63,3 @@ Now that we have a key pair we are ready to start the CFT stack.
 
     ![IP](./images/publicip.png)
 
-Using that IP address you should be able to SSH to your attacker VM using your SSH key with the username ubuntu.  We will not cover connecting via SSH in this lab.  However, an example of this on OSX would be **ssh -i GTS2022-AttackerVM-INITIALS.pem  ubuntu@35.88.253.243**

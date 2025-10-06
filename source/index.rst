@@ -6,8 +6,8 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: CDR for AWS Attack Labs
-   :name: _aws_attack_labs
+   :caption: WEKA DR Recovery Lab
+   :name: _weka_dr_recovery_lab
    :hidden:
 
    build_attacker_vm_ami/build_attacker_vm_ami
