@@ -29,7 +29,7 @@ To create a key pair search "key pairs" in the AWS
 
 4.  On the Security Configuration page change Create Network Security Group to **yes** 
 
-    ![CDM Security](./images/cdm.png)
+    ![CDM Security](./images/cdm_security.png)
 
 5.  For Private key file format choose the appropriate type for your SSH client
 
