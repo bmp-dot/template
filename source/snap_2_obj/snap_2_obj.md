@@ -11,10 +11,10 @@ To create a key pair search "key pairs" in the AWS
 1.  In WEKA CDM choose your cloud
 
 
-    ```{image} ../images/cdm.png
+    ```{image} ./images/cdm.png
     :width: 50%
-    :target: ../images/cdm.png
-    :alt: Snap2Obj Diagram
+    :target: ./images/cdm.png
+    :alt: CDM
 
 
 
