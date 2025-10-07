@@ -97,7 +97,7 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 html_static_path = ['_static']
 
 
-html_logo = "_static/WEKA_logo.svg"
+html_logo = "WEKA_logo.png"
 html_favicon = "_static/favicon.ico"
 
 html_css_files = [
@@ -119,7 +119,7 @@ html_show_sphinx = False
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
     'navbar_title': "Hands On Labs",
-    'navbar_logo': "WEKA_logo.svg",
+
 
     # Tab name for entire site. (Default: "Site")
     
