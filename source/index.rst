@@ -33,14 +33,4 @@ Welcome to the WEKA Workshops!
 Choose a workshop from the left-hand menu to get started.
 
 
-Pre-Requisites
-==============
-
-
-- 
-
-Agenda
-==========
-
-
 - 
