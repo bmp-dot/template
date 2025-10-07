@@ -31,9 +31,19 @@ To create a key pair search "key pairs" in the AWS
 
     ![CDM Security](./images/cdm_security.png)
 
-5.  For Private key file format choose the appropriate type for your SSH client
 
-6.  Press **Create key pair**.  When you create the key pair a download will start of the private key.  You will need this key to SSH to your attacker VM.  Do not lose this key!  This key is not stored anywhere else!
+5.  On the Clients  page change "Number of Clients to **3**.  These clients will be used to generate test data that will be restored witn Snap2Obj.
+
+    ![CDM Clients](./images/cdm_clients.png)
+
+
+6.  On the right hand side download the generated Terraform file
+
+    ![Terraform](./images/tf_download.png)
+
+7.  Run **terrafrom init** and **terraform apply**.
+
+8.  Once that finishes you will need to logon to the **Azure Portal** and go to the WEKA 
 
 
      ![CreatePair](./images/createpair.png)

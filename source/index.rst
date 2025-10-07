@@ -6,11 +6,11 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: WEKA DR Recovery Lab
-   :name: _weka_dr_recovery_lab
+   :caption: WEKA Snap2Obj Lab
+   :name: _weka_snap2obj_lab
    :hidden:
 
-   build_attacker_vm_ami/build_attacker_vm_ami
+   snap_2_obj/snap_2_obj
 
 
 .. toctree::
