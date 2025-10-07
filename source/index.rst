@@ -6,20 +6,15 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: WEKA DR Recovery Lab
+   :caption: WEKA DR Recovery Lab_2
    :name: _weka_dr_recovery_lab
    :hidden:
 
-   build_attacker_vm_ami/build_attacker_vm_ami
+   WEKA DR Recovery Lab <build_attacker_vm_ami/build_attacker_vm_ami>
+   Grafana Lab <grafana_lab/grafana_lab>
 
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Grafana Lab
-   :name: _grafana_lab
-   :hidden:
 
-   grafana_lab/grafana_lab
 .. _welcome:
 
 --------------------------------
