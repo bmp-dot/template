@@ -11,7 +11,7 @@
    :hidden:
 
    snap_2_obj/snap_2_obj
-
+   connect_obj/connect_obj
 
 .. toctree::
    :maxdepth: 2
