@@ -76,9 +76,7 @@ Creating the clusters will be done with WEKA CDM [WEKA CDM](https://cloud.weka.i
     :alt: Terraform Output
     ```
 
-
 8.  Once Terrform completes you will need to logon to the **Azure Portal** and add an inbound **14000** rule to your SG.
-
 
    ```{image} ./images/azure_inbound.png
     :width: 50%
@@ -93,4 +91,3 @@ Creating the clusters will be done with WEKA CDM [WEKA CDM](https://cloud.weka.i
     :class: zoomable
     :alt: WEKA Secret
     ```
-    
