@@ -110,7 +110,9 @@ html_extra_path = [
     "_headers",
 ]
 
-html_sidebars = {'**': ['localtoc.html']}
+html_sidebars = {
+    '**': ['globaltoc.html', 'localtoc.html', 'searchbox.html']
+}
 
 html_title = ""
 

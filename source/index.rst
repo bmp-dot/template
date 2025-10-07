@@ -8,6 +8,7 @@
    :maxdepth: 2
    :caption: WEKA DR Recovery Lab
    :name: _weka_dr_recovery_lab
+   :hidden:
 
    build_attacker_vm_ami/build_attacker_vm_ami
 
@@ -16,6 +17,7 @@
    :maxdepth: 2
    :caption: Grafana Lab
    :name: _grafana_lab
+   :hidden:
 
    grafana_lab/grafana_lab
    
