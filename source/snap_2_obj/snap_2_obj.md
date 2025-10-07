@@ -48,7 +48,48 @@ To create a key pair search "key pairs" in the AWS
     ![Terraform](./images/tf_download.png)
 
 
-7.  Run **terrafrom init** and **terraform apply**.
+7.  Run **terrafrom init** and **terraform apply**.  You should get an output simialr to the below.
+
+
+```
+ "function_app_name" = "weka-bxpazure-function-app"
+  "function_key_name" = "functionKeys"
+  "functions_url" = {
+    "progressing_status" = {
+      "body" = {
+        "type" = "progress"
+      }
+      "url" = "https://weka-bxpazure-function-app.azurewebsites.net/api/status"
+    }
+    "resize" = {
+      "body" = {
+        "value" = 7
+      }
+      "uri" = "https://weka-bxpazure-function-app.azurewebsites.net/api/resize"
+    }
+    "status" = {
+      "body" = {
+        "type" = "status"
+      }
+      "url" = "https://weka-bxpazure-function-app.azurewebsites.net/api/status"
+    }
+  }
+  "key_vault_name" = "weka-bxpazure"
+  "nfs_vmss_name" = null
+  "ppg_id" = "/subscriptions/removed/
+  /resourceGroups/weka-lab-east/providers/Microsoft.Compute/proximityPlacementGroups/weka-bxpazure-backend-ppg"
+  "private_ssh_key" = "/tmp/weka-bxpazure-private-key.pem"
+  "s3_protocol_gateway_ips" = null
+  "sg_id" = "/subscriptions/removed/resourceGroups/weka-lab-east/providers/Microsoft.Network/networkSecurityGroups/weka-sg"
+  "smb_protocol_gateway_ips" = null
+  "subnet_name" = "weka-subnet-0"
+  "vm_username" = "weka"
+  "vmss_name" = "weka-bxpazure-vmss"
+  "vnet_name" = "weka-vnet"
+  "vnet_rg_name" = "weka-lab-east"
+  "weka_cluster_admin_password_secret_name" = "weka-password"
+  ```
+
 
 8.  Once that finishes you will need to logon to the **Azure Portal** and go to the WEKA 
 
