@@ -79,4 +79,6 @@ To create a key pair search "key pairs" in the AWS
 8.  Once that finishes you will need to logon to the **Azure Portal** and go to the WEKA 
 
 
-##  New section
+# Setup Snap 2 Object
+
+# Seed Test Data
