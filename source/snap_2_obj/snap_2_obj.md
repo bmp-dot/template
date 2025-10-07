@@ -76,8 +76,7 @@ To create a key pair search "key pairs" in the AWS
   }
   "key_vault_name" = "weka-bxpazure"
   "nfs_vmss_name" = null
-  "ppg_id" = "/subscriptions/removed/
-  /resourceGroups/weka-lab-east/providers/Microsoft.Compute/proximityPlacementGroups/weka-bxpazure-backend-ppg"
+  "ppg_id" = "/subscriptions/removed/resourceGroups/weka-lab-east/providers/Microsoft.Compute/proximityPlacementGroups/weka-bxpazure-backend-ppg"
   "private_ssh_key" = "/tmp/weka-bxpazure-private-key.pem"
   "s3_protocol_gateway_ips" = null
   "sg_id" = "/subscriptions/removed/resourceGroups/weka-lab-east/providers/Microsoft.Network/networkSecurityGroups/weka-sg"
