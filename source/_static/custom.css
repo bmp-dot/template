@@ -1,33 +1,37 @@
-/* custom.css - force-show logo and hide brand text */
+/* Large WEKA logo + visible title */
 .navbar-brand {
   display: flex !important;
   align-items: center !important;
-  gap: 8px; /* space between logo and text */
-  color: #fff !important; /* keeps text visible on dark navbar */
+  gap: 10px;                         /* space between logo and text */
+  color: #fff !important;            /* white text on dark navbar */
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.2;
+  text-indent: 0 !important;
+  overflow: visible !important;
+  padding-left: 0 !important;
+  width: auto !important;
 }
 
+/* inject the logo before the text */
 .navbar-brand::before {
   content: "";
   display: inline-block;
-  width: 36px;  /* logo width */
-  height: 36px; /* logo height */
+  width: 180px;                      /* same width as your original background box */
+  height: 50px;                      /* taller than before for large logo */
   background: url('WEKA_logo.png') left center no-repeat;
-  background-size: contain;
+  background-size: auto 36px;        /* logo height */
+  flex-shrink: 0;
 }
 
-
-/* Small screens */
+/* tweak for small screens */
 @media (max-width: 767px) {
+  .navbar-brand::before {
+    width: 140px;
+    background-size: auto 28px;
+  }
   .navbar-brand {
-    background-size: auto 28px !important;
-    padding-left: 44px !important;
-    width: 150px !important;
-    line-height: 48px !important;
+    font-size: 16px;
+    gap: 6px;
   }
 }
-
-/* Accessibility: keep screen readers reading the text while hiding visually */
-.navbar-brand[aria-hidden="false"] { clip: rect(0 0 0 0); clip-path: inset(50%); height:1px; width:1px; overflow:hidden; position:absolute; white-space:nowrap; }
