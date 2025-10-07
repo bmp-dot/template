@@ -98,7 +98,7 @@ html_static_path = ['_static']
 
 
 html_logo = "WEKA_logo.png"
-html_favicon = "_static/favicon.ico"
+html_favicon = "favicon.ico"
 
 html_css_files = [
  #   'custom.css',
