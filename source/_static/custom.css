@@ -35,3 +35,8 @@
     gap: 6px;
   }
 }
+
+img {
+  max-width: 50%;
+  height: auto;
+}
