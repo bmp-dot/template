@@ -109,7 +109,7 @@ html_css_files = [
     'bootstrap-sphinx.css',
 ]
 
-html_baseurl = 'https://wekalabs.dev'
+html_baseurl = 'https://wekaworkshops.dev'
 html_extra_path = [
     "_headers",
 ]
@@ -122,7 +122,7 @@ html_show_sphinx = False
 
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
-    'navbar_title': "Hands On Labs",
+    'navbar_title': "WEKA Workshops",
     
 
 
