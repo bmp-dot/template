@@ -1,7 +1,7 @@
 .. role:: html(raw)
    :format: html
 
-.. title:: WEKA: DR Recovery Lab
+.. title:: WEKA: Hands On Labs
 
 
 .. toctree::
@@ -11,16 +11,15 @@
    :hidden:
 
    build_attacker_vm_ami/build_attacker_vm_ami
-   detect_for_aws_ec2_attack_lab/detect_for_aws_ec2_attack_lab
+
 
 .. toctree::
    :maxdepth: 2
-   :caption: Reference
-   :name: _reference
+   :caption: Grafana Lab
+   :name: _grafana_lab
    :hidden:
 
-   create_aws_account/create_aws_account
-
+   grafana_lab/grafana_lab
 .. _welcome:
 
 --------------------------------
