@@ -118,12 +118,14 @@ html_show_sphinx = False
 
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
-    'navbar_title': "Hands On Labs",
+    'navbar_title': "",
+    
 
 
     # Tab name for entire site. (Default: "Site")
     
     'navbar_site_name': "",
+    'navbar_logo': "WEKA_Logo.png",
 
     # Render the next and previous page links in navbar. (Default: true)
     
