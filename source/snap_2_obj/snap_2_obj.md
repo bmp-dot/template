@@ -10,6 +10,7 @@ To create a key pair search "key pairs" in the AWS
 
 1.  In WEKA CDM choose your cloud
 
+
     ```{image} ./images/cdm.png
     :width: 50%
     :class: zoomable
@@ -22,6 +23,7 @@ To create a key pair search "key pairs" in the AWS
     - Deployment Resource Group Nam
     - Vnet Resource Group Name
 
+
     ```{image} ./images/cdm_basic.png
     :width: 50%
     :class: zoomable
@@ -29,6 +31,7 @@ To create a key pair search "key pairs" in the AWS
     ```
 
 3.  On the Network Configuration page change "Create Vnet and Subnet" to **yes**
+
 
     ```{image} ./images/cdm_network.png
     :width: 50%
@@ -38,6 +41,7 @@ To create a key pair search "key pairs" in the AWS
 
 4.  On the Security Configuration page change Create Network Security Group to **yes** 
 
+
     ```{image} ./images/cdm_security.png
     :width: 50%
     :class: zoomable
@@ -46,6 +50,7 @@ To create a key pair search "key pairs" in the AWS
 
 5.  On the Clients  page change "Number of Clients to **3**.  These clients will be used to generate test data that will be restored witn Snap2Obj.
 
+
     ```{image} ./images/cdm_clients.png
     :width: 50%
     :class: zoomable
@@ -53,6 +58,7 @@ To create a key pair search "key pairs" in the AWS
     ```
 
 6.  On the right hand side download the generated Terraform file
+
 
     ```{image} ./images/tf_download.png
     :width: 50%
@@ -63,43 +69,12 @@ To create a key pair search "key pairs" in the AWS
 7.  Run **terrafrom init** and **terraform apply**.  You should get an output simialr to the below.
 
 
-```
- "function_app_name" = "weka-bxpazure-function-app"
-  "function_key_name" = "functionKeys"
-  "functions_url" = {
-    "progressing_status" = {
-      "body" = {
-        "type" = "progress"
-      }
-      "url" = "https://weka-bxpazure-function-app.azurewebsites.net/api/status"
-    }
-    "resize" = {
-      "body" = {
-        "value" = 7
-      }
-      "uri" = "https://weka-bxpazure-function-app.azurewebsites.net/api/resize"
-    }
-    "status" = {
-      "body" = {
-        "type" = "status"
-      }
-      "url" = "https://weka-bxpazure-function-app.azurewebsites.net/api/status"
-    }
-  }
-  "key_vault_name" = "weka-bxpazure"
-  "nfs_vmss_name" = null
-  "ppg_id" = "/subscriptions/removed/resourceGroups/weka-lab-east/providers/Microsoft.Compute/proximityPlacementGroups/weka-bxpazure-backend-ppg"
-  "private_ssh_key" = "/tmp/weka-bxpazure-private-key.pem"
-  "s3_protocol_gateway_ips" = null
-  "sg_id" = "/subscriptions/removed/resourceGroups/weka-lab-east/providers/Microsoft.Network/networkSecurityGroups/weka-sg"
-  "smb_protocol_gateway_ips" = null
-  "subnet_name" = "weka-subnet-0"
-  "vm_username" = "weka"
-  "vmss_name" = "weka-bxpazure-vmss"
-  "vnet_name" = "weka-vnet"
-  "vnet_rg_name" = "weka-lab-east"
-  "weka_cluster_admin_password_secret_name" = "weka-password"
-  ```
+   ```{image} ./images/tf_output.png
+    :width: 50%
+    :class: zoomable
+    :alt: Terraform Output
+    ```
+
 
 8.  Once that finishes you will need to logon to the **Azure Portal** and go to the WEKA 
 

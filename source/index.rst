@@ -1,7 +1,7 @@
 .. role:: html(raw)
    :format: html
 
-.. title:: WEKA: Hands On Labs
+.. title:: WEKA: Workshops
 
 
 .. toctree::
@@ -24,17 +24,17 @@
 .. _welcome:
 
 --------------------------------
-Welcome!
+Welcome
 --------------------------------
 
-Welcome to the WEKA DR recovery lab
+Welcome to the WEKA Workshops!
 
-During this lab you will you will work through restoring a WEKA cluster from Snap2Obj
+Choose a workshop from the left-hand menu to get started.
 
 
 Pre-Requisites
 ==============
-Familiarity with Terraform and Azure
+
 
 - 
 
