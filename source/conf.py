@@ -119,6 +119,7 @@ html_show_sphinx = False
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
     'navbar_title': "Hands On Labs",
+    'navbar_logo': "_static/WEKA_logo.png",
 
     # Tab name for entire site. (Default: "Site")
     
