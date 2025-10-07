@@ -118,7 +118,7 @@ html_show_sphinx = False
 
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
-    'navbar_title': "",
+    'navbar_title': "Hands On Labs",
     
 
 
