@@ -13,7 +13,7 @@ To create a key pair search "key pairs" in the AWS
 
     ```{image} ./images/cdm.png
     :width: 50%
-    :target: ./images/cdm.png
+    :class: zoomable
     :alt: CDM
 
 
