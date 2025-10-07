@@ -4,3 +4,4 @@ sphinx-fontawesome
 sphinxcontrib-fulltoc
 sphinx_copybutton
 myst-parser
+sphinxawesome-theme
