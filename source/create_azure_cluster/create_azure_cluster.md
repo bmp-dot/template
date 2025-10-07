@@ -1,12 +1,8 @@
 # Create WEKA Azure Cluster
 
-## Overview
-In this lab we will create a cluster in Azure and AWS, setup Snap 2 Object, then restore the file system to different cluster.
+###  Creating WEKA cloud cluster
+Creating the clusters will be done with WEKA CDM https://cloud.weka.io.  This will generate a Terraform file that is used to create the WEKA cluster
 
-##  Creating WEKA cloud cluster
-Creating the clusters will be done with WEKA CDM https://cloud.weka.io
-
-To create a key pair search "key pairs" in the AWS 
 
 1.  In WEKA CDM choose your cloud
 
