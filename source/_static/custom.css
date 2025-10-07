@@ -1,8 +1,9 @@
 .navbar-brand img {
-    max-height: 32px;
-    width: auto;
-    margin-top: -6px;
+  display: inline-block !important;
+  max-height: 36px;
+  width: auto;
 }
+
 .navbar-inverse {
     min-height: 50px;
 }

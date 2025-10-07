@@ -101,7 +101,7 @@ html_logo = "_static/WEKA_logo.svg"
 html_favicon = "favicon.ico"
 
 html_css_files = [
- #   'custom.css',
+    'custom.css',
     'bootstrap-sphinx.css',
 ]
 
