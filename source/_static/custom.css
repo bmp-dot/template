@@ -1,9 +1,25 @@
-.navbar-brand img {
-  display: inline-block !important;
-  max-height: 36px;
-  width: auto;
+/* custom.css - force-show logo and hide brand text */
+.navbar-brand {
+  display: block !important;
+  background: url('WEKA_logo.png') left center no-repeat !important; /* path is relative to this CSS file (_static/) */
+  background-size: auto 36px !important;    /* tweak height */
+  padding-left: 48px !important;             /* give room for the logo */
+  color: transparent !important;             /* hide the text */
+  text-indent: -9999px !important;           /* extra insurance to hide */
+  overflow: hidden !important;
+  width: 180px !important;                   /* space reserved for logo */
+  line-height: 50px !important;              /* align vertically with navbar */
 }
 
-.navbar-inverse {
-    min-height: 50px;
+/* Small screens */
+@media (max-width: 767px) {
+  .navbar-brand {
+    background-size: auto 28px !important;
+    padding-left: 44px !important;
+    width: 150px !important;
+    line-height: 48px !important;
+  }
 }
+
+/* Accessibility: keep screen readers reading the text while hiding visually */
+.navbar-brand[aria-hidden="false"] { clip: rect(0 0 0 0); clip-path: inset(50%); height:1px; width:1px; overflow:hidden; position:absolute; white-space:nowrap; }
