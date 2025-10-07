@@ -3,9 +3,6 @@
 ## Overview
 In this lab we will create a cluster in Azure and AWS, setup Snap 2 Object, then restore the file system to different cluster.
 
-## Notes 
-- If you already have a cluster you can use that as your source.
-
 ##  Creating WEKA cloud cluster
 Creating the clusters will be done with WEKA CDM https://cloud.weka.io
 
@@ -13,33 +10,43 @@ To create a key pair search "key pairs" in the AWS
 
 1.  In WEKA CDM choose your cloud
 
+
     ![CDM](./images/cdm.png)
 
+
 2.  Fill out the required fields on the Basic page that don't have defaults
- - Cluster Name
- - Subscription ID
- - Deployment Resource Group Nam
- - Vnet Resource Group Name
+    - Cluster Name
+    - Subscription ID
+    - Deployment Resource Group Nam
+    - Vnet Resource Group Name
+
 
     ![CDM Basic](./images/cdm_basic.png)
 
+
 3.  On the Network Configuration page change "Create Vnet and Subnet" to **yes**
+
 
     ![CDM Network](./images/cdm_network.png)
 
+
 4.  On the Security Configuration page change Create Network Security Group to **yes** 
+
 
     ![CDM Security](./images/cdm_security.png)
 
 
 5.  On the Clients  page change "Number of Clients to **3**.  These clients will be used to generate test data that will be restored witn Snap2Obj.
 
+
     ![CDM Clients](./images/cdm_clients.png)
 
 
 6.  On the right hand side download the generated Terraform file
 
+
     ![Terraform](./images/tf_download.png)
+
 
 7.  Run **terrafrom init** and **terraform apply**.
 

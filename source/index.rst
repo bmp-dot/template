@@ -31,16 +31,15 @@ Welcome to the WEKA DR recovery lab
 
 During this lab you will you will work through restoring a WEKA cluster from Snap2Obj
 
-What's new
-==========
-
 
 Pre-Requisites
 ==============
+Familiarity with Terraform and Azure
 
 - 
 
 Agenda
 ==========
+
 
 - 
