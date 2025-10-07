@@ -100,9 +100,14 @@ html_static_path = ['_static']
 html_logo = "_static/WEKA_logo.svg"
 html_favicon = "favicon.ico"
 
+html_js_files = [
+    'jquery.fancybox.min.js',
+]
+
 html_css_files = [
     'custom.css',
     'bootstrap-sphinx.css',
+    'jquery.fancybox.min.css',
 ]
 
 html_baseurl = 'https://wekalabs.dev'

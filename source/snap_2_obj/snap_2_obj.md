@@ -10,7 +10,13 @@ To create a key pair search "key pairs" in the AWS
 
 1.  In WEKA CDM choose your cloud
 
-    [![CDM](./images/cdm.png)](./images/cdm.png)
+
+    ```{image} ../images/cdm.png
+    :width: 50%
+    :target: ../images/cdm.png
+    :alt: Snap2Obj Diagram
+
+
 
 2.  Fill out the required fields on the Basic page that don't have defaults
     - Cluster Name
