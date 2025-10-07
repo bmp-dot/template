@@ -80,34 +80,6 @@ To create a key pair search "key pairs" in the AWS
 
 8.  Once that finishes you will need to logon to the **Azure Portal** and go to the WEKA 
 
-    [![CreatePair](./images/createpair.png)](./images/createpair.png)
+   
 
-##  Creating Attacker VM from CloudFormation Template
-Now that we have a key pair we are ready to start the CFT stack.
-
-1.  First download the CFT [here](remove.yaml)
-
-2.  In the AWS Management Console navigate to the **CFT Stacks** page by typing **stacks** in the search field and choose the stacks CloudFormation feature
-
-    [![Stacks](./images/stacks.png)](./images/stacks.png)
-
-3.  On the Stacks page press **Create stack** on the top right.  In the drop down choose **with new resources (standard)**
-
-4.  On the Create stack page under Prepare template select **Template is ready** (default).  Under template source choose **Upload a template file**.  Choose your template file you previously downloaded.
-
-    [![CreateStack](./images/createstack.png)](./images/createstack.png)
-
-5.  Press **Next** and enter a stack name of your **INITIALS**.  The CFT will automatically name your EC2 instance the name of your stack
-
-6.  Under Parameters find your SSH key **GTS2022-AttackerVM-INITIALS** in the drop down and press **Next**
-
-    [![CreateStack Details](./images/details.png)](./images/details.png)
-
-7.  On the Configure stack options page leave everything their default values and press **Next**
-
-8.  On the Review page scroll to the bottom and press **Create stack**
-
-9.  Once the stack complete press the **Outputs** tab and take note of the IP address
-
-    [![IP](./images/publicip.png)](./images/publicip.png)
-
+##  New section 
