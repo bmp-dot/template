@@ -1,15 +1,23 @@
 /* custom.css - force-show logo and hide brand text */
 .navbar-brand {
-  display: block !important;
-  background: url('WEKA_logo.png') left center no-repeat !important; /* path is relative to this CSS file (_static/) */
-  background-size: auto 36px !important;    /* tweak height */
-  padding-left: 48px !important;             /* give room for the logo */
-  color: transparent !important;             /* hide the text */
-  text-indent: -9999px !important;           /* extra insurance to hide */
-  overflow: hidden !important;
-  width: 180px !important;                   /* space reserved for logo */
-  line-height: 50px !important;              /* align vertically with navbar */
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px; /* space between logo and text */
+  color: #fff !important; /* keeps text visible on dark navbar */
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
 }
+
+.navbar-brand::before {
+  content: "";
+  display: inline-block;
+  width: 36px;  /* logo width */
+  height: 36px; /* logo height */
+  background: url('WEKA_logo.png') left center no-repeat;
+  background-size: contain;
+}
+
 
 /* Small screens */
 @media (max-width: 767px) {
