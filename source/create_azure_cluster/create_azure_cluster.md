@@ -1,4 +1,4 @@
-# Create Azure Cluster
+# Create WEKA Azure Cluster
 
 ## Overview
 In this lab we will create a cluster in Azure and AWS, setup Snap 2 Object, then restore the file system to different cluster.
@@ -77,8 +77,3 @@ To create a key pair search "key pairs" in the AWS
 
 
 8.  Once that finishes you will need to logon to the **Azure Portal** and go to the WEKA 
-
-
-# Setup Snap 2 Object
-
-# Seed Test Data 

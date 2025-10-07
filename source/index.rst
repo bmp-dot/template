@@ -10,8 +10,9 @@
    :name: _weka_snap2obj_lab
    :hidden:
 
-   snap_2_obj/snap_2_obj
+   create_azure_cluster/create_azure_cluster
    connect_obj/connect_obj
+   seed_cluster/seed_cluster
 
 .. toctree::
    :maxdepth: 2
