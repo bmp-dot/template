@@ -1,4 +1,4 @@
-# Setup Snap 2 Object
+# Setup Snap2Object
 
 ###  Overview
 Once the WEKA cluster is created in Azure we will now create a blob and connect to the WEKA cluster.  This is the location WEKA will store snapshots data.  These snapshops will be later used to restore to a new cluster.
@@ -7,12 +7,14 @@ Once the WEKA cluster is created in Azure we will now create a blob and connect 
 
 - Admin Access in Azure
 
+
+
 1.  Logon to the **Azure Portal** and start **Cloud Shell**
 
 2.  Azure Blob Storage containers reside within a storage account. So we need to create a new storage account.
 
 ```bash
-az storage account create --name $STORAGE_ACCOUNT_NAME --resource-group $RG --location $REGION --sku Standard_LRS
+az storage account create --name $STORAGE_ACCOUNT_NAME --resource-group $RG --location $LOCATION --sku Standard_LRS
 ```
 
 3.  Now, create the container within your storage account. This is the equivalent of an S3 bucket in Azure.
@@ -28,11 +30,7 @@ az storage container create --name $CONTAINER_NAME --account-name $STORAGE_ACCOU
 az storage account keys list --account-name $STORAGE_ACCOUNT_NAME  --query "[0].{keyName:keyName, value:value}" --output json
 ```
 
-```{image} ./images/azure_secret.png
-:width: 50%
-:class: zoomable
-:alt: Secret Key
-```
+![Secret Key](./images/azure_secret.png)
 
 5. SSH into on of your WEKA Backends.  The location of the .pem file is in your Terraform output
 ```bash
