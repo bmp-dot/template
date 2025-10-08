@@ -60,7 +60,11 @@ We are using 0.0.0.0/0 only in the lab so we can connect remotely. In a producti
 :alt: CDM Security
 ```
 
-5.  On the Clients  page change "Number of Clients to **3**.  These clients will be used to generate test data that will be restored witn Snap2Obj.
+5.  On the Clients page change 
+    - Change "Deploy WEKA stateless clients" to **yes**
+    - Set "Number of Clients to **3**.
+    - Change :Machine Type of Clients" to **Standard_D4s_v3**
+
 
 ```{image} ./images/cdm_clients.png
 :width: 50%
