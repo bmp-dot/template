@@ -1,17 +1,18 @@
 # Create WEKA Azure Cluster
 
 ###  Overview
-Creating the clusters will be done with WEKA CDM [WEKA CDM](https://cloud.weka.io). This will generate a Terraform file that is used to create the WEKA cluster.  
+Creating the clusters will be done with [WEKA CDM](https://cloud.weka.io). This will generate a Terraform file that is used to create the WEKA cluster.  
 
 **Prerequisites**
 
 - Admin Access in Azure
+    - Resource Group created in Azure.  If using the WEKA lab use **East-US**
 - WEKA CDM access
 - Experience with Terraform
 
 ### CDM Config
 
-1.  In WEKA CDM [WEKA CDM](https://cloud.weka.io) choose **Azure**
+1.  In [WEKA CDM](https://cloud.weka.io) choose **Azure**
 
 ```{image} ./images/cdm.png
 :width: 50%
@@ -32,11 +33,11 @@ Creating the clusters will be done with WEKA CDM [WEKA CDM](https://cloud.weka.i
 ```
 
 3.  On the Network Configuration page 
-    - Change "Create Vnet and Subnet" to **yes**
-    - Change "Assign Public IP" to **yes**
+    - Change "Create Vnet and Subnet" to **Yes**
+    - Change "Assign Public IP" to **Yes**
 
 ```{note}
-We are assigning a public IP only in the lab so we can connect remotely.
+We are assigning a public IP in the lab so we can connect remotely.
 ```
 
 ```{image} ./images/cdm_network.png
@@ -46,12 +47,12 @@ We are assigning a public IP only in the lab so we can connect remotely.
 ```
 
 4.  On the Security Configuration page change 
-    - Change "Create Network Security Group" to **yes**
+    - Change "Create Network Security Group" to **Yes**
     - On "Allowable CIDR for TCP Port 22 Access" add **0.0.0.0/0**
     - On "Allowable CIDR for TCP Port 14000 Access" add **0.0.0.0/0**
 
 ```{note}
-We are using 0.0.0.0/0 only in the lab so we can connect remotely. In a production deployment these should be set to valid ranges.
+We are using 0.0.0.0/0 in the lab so we can connect remotely. In a production deployment these should be set to valid ranges.
 ```
 
 ```{image} ./images/cdm_security.png
