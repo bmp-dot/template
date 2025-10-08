@@ -7,7 +7,7 @@ Once the WEKA cluster is created in Azure we will now create a blob and connect 
 
 - Admin Access in Azure
 
-
+### Azure Setup
 
 1.  Logon to the **Azure Portal** and start **Cloud Shell**
 
@@ -37,7 +37,9 @@ az storage account keys list --account-name $STORAGE_ACCOUNT_NAME  --query "[0].
 ssh -i $SSH_KEY.pem weka@$BACKEND_PUBLIC_IP
 ```
 
-6. Add a remote bucket to your WEKA cluster. You will need the following vaules from the above steps
+### WEKA Setup
+
+1. Add a remote bucket to your WEKA cluster. You will need the following vaules from the previous steps
 
     - STORAGE_ACCOUNT_NAME
     - CONTAINER_NAME
@@ -47,7 +49,7 @@ ssh -i $SSH_KEY.pem weka@$BACKEND_PUBLIC_IP
 weka fs tier s3 add azure-obs --site local --obs-name default-local --obs-type AZURE --hostname $STORAGE_ACCOUNT_NAME.blob.core.windows.net --port 443 --bucket $CONTAINER_NAME --access-key-id $STORAGE_ACCOUNT_NAME --secret-key $STORAGE_ACCOUNT_ACCESS_KEY --protocol https --auth-method AWSSignature4
 ```
 
-7. Attatch the buckt to your **default** file system 
+2. Attatch the buckt to your **default** file system 
 
 ```bash
 weka fs tier s3 attach default azure-obs --mode remote

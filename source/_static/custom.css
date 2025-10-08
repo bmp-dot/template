@@ -2,7 +2,7 @@
 .navbar-brand {
   display: flex !important;
   align-items: center !important;
-  gap: 10px;                         /* space between logo and text */
+  gap: 5px;                         /* space between logo and text */
   color: #fff !important;            /* white text on dark navbar */
   font-weight: 600;
   font-size: 18px;

@@ -122,7 +122,7 @@ html_show_sphinx = False
 
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
-    'navbar_title': "WEKA Workshops",
+    'navbar_title': "Workshops",
     
 
 
