@@ -2,7 +2,7 @@
 .navbar-brand {
   display: flex !important;
   align-items: center !important;
-  gap: 5px;                         /* space between logo and text */
+  gap: 1px;                         /* space between logo and text */
   color: #fff !important;            /* white text on dark navbar */
   font-weight: 600;
   font-size: 18px;
@@ -39,4 +39,14 @@
 img {
   max-width: 50%;
   height: auto;
+}
+
+.bs-sidenav {
+  position: fixed;
+  top: 70px; /* Adjust based on your navbar height */
+  left: 0;
+  width: 250px; /* Adjust as needed */
+  overflow-y: auto;
+  max-height: 90vh;
+  z-index: 1000;
 }

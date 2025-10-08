@@ -13,6 +13,11 @@ weka fs snapshot create default aspen
 weka fs snapshot upload default aspen
 ```
 
+```bash
+weka fs snapshot
+````
+
+
 
 note the locator 
 ## Section A

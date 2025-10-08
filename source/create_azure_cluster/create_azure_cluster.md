@@ -9,9 +9,9 @@ Creating the clusters will be done with WEKA CDM [WEKA CDM](https://cloud.weka.i
 - WEKA CDM access
 - Experience with Terraform
 
-### WEKA CDM
+### CDM Config
 
-1.  In WEKA CDM choose your cloud
+1.  In WEKA CDM [WEKA CDM](https://cloud.weka.io) choose **Azure**
 
 ```{image} ./images/cdm.png
 :width: 50%
