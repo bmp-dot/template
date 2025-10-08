@@ -45,6 +45,7 @@ img {
   position: fixed;
   top: 70px; /* Adjust based on your navbar height */
   left: 0;
+  margin-left: 20px; /* Add this line */
   width: 250px; /* Adjust as needed */
   overflow-y: auto;
   max-height: 90vh;

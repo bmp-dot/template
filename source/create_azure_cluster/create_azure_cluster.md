@@ -31,7 +31,13 @@ Creating the clusters will be done with WEKA CDM [WEKA CDM](https://cloud.weka.i
 :alt: CDM Basic
 ```
 
-3.  On the Network Configuration page change "Create Vnet and Subnet" to **yes**
+3.  On the Network Configuration page 
+    - Change "Create Vnet and Subnet" to **yes**
+    - Change "Assign Public IP" to **yes**
+
+```{note}
+We are assigning a public IP only in the lab so we can connect remotely.
+```
 
 ```{image} ./images/cdm_network.png
 :width: 50%
@@ -39,7 +45,14 @@ Creating the clusters will be done with WEKA CDM [WEKA CDM](https://cloud.weka.i
 :alt: CDM Network
 ```
 
-4.  On the Security Configuration page change Create Network Security Group to **yes** 
+4.  On the Security Configuration page change 
+    - Change "Create Network Security Group" to **yes**
+    - On "Allowable CIDR for TCP Port 22 Access" add **0.0.0.0/0**
+    - On "Allowable CIDR for TCP Port 14000 Access" add **0.0.0.0/0**
+
+```{note}
+We are using 0.0.0.0/0 only in the lab so we can connect remotely. In a production deployment these should be set to valid ranges.
+```
 
 ```{image} ./images/cdm_security.png
 :width: 50%
