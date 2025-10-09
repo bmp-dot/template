@@ -8,8 +8,11 @@ Once the WEKA cluster is created in Azure we will now create a blob and connect 
 - Admin Access in Azure
 
 ### Azure Setup
+We need to create a remote Object Store in Azure to connect to WEKA.
 
 1.  Logon to the **Azure Portal** and start **Cloud Shell**
+
+![Cloud Shell](./images/cloud_shell.png)
 
 2.  Azure Blob Storage containers reside within a storage account. So we need to create a new storage account.
 
@@ -38,6 +41,8 @@ ssh -i $SSH_KEY.pem weka@$BACKEND_PUBLIC_IP
 ```
 
 ### WEKA Setup
+We will now connect the Azure blob to WEKA for remote Snapshots.  
+
 
 1. Add a remote bucket to your WEKA cluster. You will need the following vaules from the previous steps
 

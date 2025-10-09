@@ -6,7 +6,7 @@ We will SSH to the clients and create a sample data set.  This data set will the
 
 
 ### Mount Azure Client
-This is only required if you are manually mounting and the Terrafor scrpit did not mount
+This is only required if you are manually mounting and the Terraform scrpit did not mount
 
 ```bash
 sudo mkdir /mnt/weka
@@ -28,7 +28,7 @@ We will create a small sample of test data using **dd**
 for i in $(seq -w 1 10); do dd if=/dev/zero of="$(hostname)_file_part${i}.img" bs=50M count=10 status=progress; done
 ```
 
-### Data Set md5sum
+### Take md5sum 
 
 We will do an md5sum on the test data to compare after snapshot restore.  Copy the output to a text file for refrence.
 
@@ -43,10 +43,13 @@ md5sum *
 ```bash
 weka fs snapshot create default aspen
 ```
+![Create Snap](./images/create_snap.png)
 
 ```bash
 weka fs snapshot upload default aspen
 ```
+
+![Upload Snap](./images/upload_snap.png)
 
 ```bash
 weka fs snapshot
