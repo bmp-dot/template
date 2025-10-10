@@ -11,8 +11,11 @@
    :hidden:
 
    snap_create_azure_cluster/create_azure_cluster
-   snap_connect_obj/connect_obj
+   snap_connect_azure_obj/connect_azure_obj
    snap_create_snapshot/create_snapshot
+   snap_create_aws_cluster/create_aws_cluster
+   snap_connect_aws_obj/connect_aws_obj
+   snap_restore_snapshot/restore_snapshot
 
 .. toctree::
    :maxdepth: 2
