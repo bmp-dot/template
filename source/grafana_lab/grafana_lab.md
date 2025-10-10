@@ -39,6 +39,12 @@ Only users with an editor or administrator role, or a specific data sources expl
 
 ### Accessing the Explore Pane
 
+
+Open Explore, ensure the data source is set to Victoria Metrics, and enter the name of the metric of interest—for example, **ops_driver.read_bytes**. Labels such as **cluster_guid** can be applied to narrow the results to a specific cluster or component.
+
+Both the graph and the raw data points can be analyzed directly. For instance, querying **fs_stats.write_bytes** displays the per-node write activity. If this counter does not change over time, it indicates that no write operations occurred on that node during the observed period
+
+
 - Go to **Explore** from the Grafana sidebar
 - Choose the data source — typically: `Victoria Metrics`
   - This contains all cluster metrics
