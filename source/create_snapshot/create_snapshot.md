@@ -38,14 +38,14 @@ We will do an md5sum on the test data to compare after snapshot restore.  Copy t
 md5sum *
 ```
 
-![md5sum](./images/md5sum.png)
+<img src="./images/md5sum.png" alt="md5sum" style="border:2px solid #888; border-radius:6px;">
 
 ### Create and upload Snapshot
 
 ```bash
 weka fs snapshot create default aspen
 ```
-![Create Snap](./images/create_snap.png)
+<img src="./images/create_snap.png" alt="Create Snap" style="border:2px solid #888; border-radius:6px;">
 
 
 U
@@ -53,7 +53,7 @@ U
 weka fs snapshot upload default aspen
 ```
 
-![Upload Snap](./images/upload_snap.png)
+<img src="./images/upload_snap.png" alt="Upload Snap" style="border:2px solid #888; border-radius:6px;">
 
 Take note of your snapshot locator.  We will need this for the restore.
 
