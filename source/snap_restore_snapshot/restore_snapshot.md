@@ -1,1 +1,3 @@
 # Restore Snapshot
+
+  We will run `fs download` to restore / migrate the file system to another WEKA cluster in a completley different cloud provider. The filesystem is created immediately. Metadata is fetched first by a background prefetcher so the tree becomes browsable immdiatley. File data is then downloaded on-demand when accessed, or proactively if you choose to prefetch. You do not need to wait for a full “bulk data restore.”  In short end users cam immdiatley access their data.
