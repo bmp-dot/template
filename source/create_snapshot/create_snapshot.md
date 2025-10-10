@@ -39,7 +39,6 @@ md5sum *
 ```
 
 ```{image} ./images/md5sum.png
-:width: 50%
 :class: bordered
 :alt: md5sum
 ```
@@ -50,7 +49,6 @@ md5sum *
 weka fs snapshot create default aspen
 ```
 ```{image} ./images/create_snap.png
-:width: 50%
 :class: bordered
 :alt: Create Snap
 ```
@@ -62,7 +60,6 @@ weka fs snapshot upload default aspen
 ```
 
 ```{image} ./images/upload_snap.png
-:width: 50%
 :class: bordered
 :alt: Upload Snap
 ```
