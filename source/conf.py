@@ -98,7 +98,7 @@ html_static_path = ['_static']
 
 
 html_logo = "_static/WEKA_logo.svg"
-html_favicon = "favicon.ico"
+html_favicon = "favicon-weka.ico"
 
 html_js_files = [
     'zoom.js',
