@@ -45,6 +45,7 @@ md5sum *
 
 ### Create and upload Snapshot
 
+#### Create Snapshot
 ```bash
 weka fs snapshot create default aspen
 ```
@@ -53,8 +54,7 @@ weka fs snapshot create default aspen
 :alt: Create Snap
 ```
 
-
-U
+#### Upload Snapshot to Remote Object Store
 ```bash
 weka fs snapshot upload default aspen
 ```
@@ -66,6 +66,7 @@ weka fs snapshot upload default aspen
 
 Take note of your snapshot locator.  We will need this for the restore.
 
+### List Snapshots
 ```bash
 weka fs snapshot
 ````
