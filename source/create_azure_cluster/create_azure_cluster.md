@@ -84,10 +84,10 @@ We are using 0.0.0.0/0 in the lab so we can connect remotely. In a production de
 7.  Run **terrafrom init** and **terraform apply**.  You should get an output simialr to the below.
 
 ```{image} ./images/tf_output.png
-:width: 50%
-:class: zoomable
+:class: bordered
 :alt: Terraform Output
 ```
+
 
 8.  Once Terrform completes you will need to logon to the **Azure Portal** and add an inbound **14000** rule to your SG.
 

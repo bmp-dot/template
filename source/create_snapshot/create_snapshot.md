@@ -43,7 +43,7 @@ md5sum *
 :alt: md5sum
 ```
 
-### Create and upload Snapshot
+### Create and Upload Snapshot
 
 #### Create Snapshot
 ```bash
