@@ -7,20 +7,24 @@
   - Navigate to **Dashboards → WEKA Presets**
 
 - Example: **Availability Dashboard**
-  - Select the relevant **cluster** (e.g., `dev cluster`)
-  - If coming from the WEKA HOME UI, the cluster may already be selected
+  - Select the **customer** (e.g., `N/A`)
+  - Select the  **cluster** (e.g., `dev cluster`)
   - Review available metrics within the dashboard panels
 
-## Retrieving Metric Names
+## Retrieving Metric Stat Names
 
 - Open a panel’s menu (three dots)
-- Go to **Inspect → Query**
-- The **Expression** field contains the **PromQL query**
-- This query indicates the exact metric name
-- Panel JSON is also available for inspection
+- Go to **Inspect**
+- Select **Data**
+- Select **JSON** tab
+- The **expr** field contains the **PromQL (Prometheus Query Language)**
+- This query indicates the **metric name**
+- You can also use the **Query** tab to see the expression 
 
 ---
 
+
+## NO EXPLORE AVAILABLE***
 ## Exploring Custom Metrics
 
 ### Accessing the Explore Pane
