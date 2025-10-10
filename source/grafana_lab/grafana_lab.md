@@ -13,13 +13,19 @@
 
 ## Retrieving Metric Stat Names
 
-- Open a panel’s menu (three dots)
+
+- On **Pending IOs / IOs Per Interval** Open a panel’s menu (three dots) on the top right
 - Go to **Inspect**
 - Select **Data**
 - Select **JSON** tab
 - The **expr** field contains the **PromQL (Prometheus Query Language)**
+
+![JSON expr](./images/grafana_json_expr.png)
+
 - This query indicates the **metric name**
 - You can also use the **Query** tab to see the expression 
+
+![Query expr](./images/grafana_query_expr.png)
 
 ---
 
