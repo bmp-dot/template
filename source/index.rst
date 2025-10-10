@@ -10,16 +10,17 @@
    :name: _weka_snap2obj_lab
    :hidden:
 
-   create_azure_cluster/create_azure_cluster
-   connect_obj/connect_obj
+   snap_create_azure_cluster/create_azure_cluster
+   snap_connect_obj/connect_obj
    create_snapshot/create_snapshot
 
 .. toctree::
    :maxdepth: 2
-   :caption: Grafana Lab
+   :caption: WEKA Grafana Lab
    :name: _grafana_lab
    :hidden:
 
+   grafana_overview/grafana_overview
    grafana_lab/grafana_lab
    
 .. _welcome:
