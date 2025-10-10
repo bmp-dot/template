@@ -12,7 +12,7 @@
 
    snap_create_azure_cluster/create_azure_cluster
    snap_connect_obj/connect_obj
-   create_snapshot/create_snapshot
+   snap_create_snapshot/create_snapshot
 
 .. toctree::
    :maxdepth: 2
