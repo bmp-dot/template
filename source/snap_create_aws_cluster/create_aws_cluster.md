@@ -100,9 +100,9 @@ We are using 0.0.0.0/0 in the lab so we can connect remotely. In a production de
 ```
 -->
 
-8.  Retrive your WEKA admin password from the Azure Key Vault.  Navigate to the newly created Key Vault >> Objects >> Secrets > weka password >> current version >> show secret value
+8.  Retrive your WEKA admin password from AWS Secrets Manager.  Navigate to AWS Secrets Manager and find your secret which is incudled in the Terraform output and press "Retrieve Secret Value" 
 
-```{image} ./images/weka_secret.png
+```{image} ./images/aws_secrets.png
 :width: 50%
 :class: zoomable
 :alt: WEKA Secret
