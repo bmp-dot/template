@@ -1,77 +1,80 @@
-## Grafana Lab
+# Using Grafana to Explore WEKA Metrics
 
-### 1. Open Grafana and Log In
-- Go to: `http://your-grafana-server:3000`
-- Login:  
-  - **Username:** `admin`  
-  - **Password:** `admin` *(or as configured)*
+## Reviewing Preset Dashboards
 
----
+- To check for a metric not covered in your existing dashboards:
+  - Open **Cluster Info**, or
+  - Navigate to **Dashboards → WEKA Presets**
 
-### 2. Add a Data Source
-- Go to: **Configuration → Data Sources**
-- Click **Add data source**
-- Select **Prometheus** (or other backend)
-- Set:
-  - **URL:** `http://localhost:9090` *(or your Prometheus URL)*
-  - Leave other settings as default
-- Click **Save & Test**
-- ✅ Confirm: “Data source is working”
+- Example: **Availability Dashboard**
+  - Select the relevant **cluster** (e.g., `dev cluster`)
+  - If coming from the WEKA HOME UI, the cluster may already be selected
+  - Review available metrics within the dashboard panels
 
----
+## Retrieving Metric Names
 
-### 3. Import a Dashboard
-- Go to: **Dashboards → Import**
-- Either:
-  - Upload JSON file  
-  - OR enter dashboard ID (e.g. `12345`)
-- Click **Load**
-- Select the correct data source
-- Click **Import**
+- Open a panel’s menu (three dots)
+- Go to **Inspect → Query**
+- The **Expression** field contains the **PromQL query**
+- This query indicates the exact metric name
+- Panel JSON is also available for inspection
 
 ---
 
-### 4. Set Up Notification Channels
-- Go to: **Alerting → Notification channels**
-- Click **New channel**
-- Enter:
-  - **Name:** (e.g. `Slack Alerts`)
-  - **Type:** Slack, Email, etc.
-  - **Webhook URL** (for Slack)
-  - **Recipient/channel**
-- Click **Save**
+## Exploring Custom Metrics
+
+### Accessing the Explore Pane
+
+- Go to **Explore** from the Grafana sidebar
+- Choose the data source — typically: `Victoria Metrics`
+  - This contains all cluster metrics
+
+### Query Methods
+
+- Two input modes are available:
+  - **GUI Builder** (assists with query construction)
+  - **Code Editor** (raw PromQL)
+
+### Example Query: `ops_driver_read_bytes`
+
+- Apply filters using available labels:
+  - Common labels: `cluster_guid`, `hostname`, `node_id`, etc.
+- Filter by `cluster_guid` to narrow to a specific cluster
+- The generated PromQL query is shown in the builder
+- Time range defaults to "last 1 hour" but can be adjusted
+- Run the query to see results
 
 ---
 
-### 5. Add an Alert Rule
-- On desired dashboard panel, click the **bell icon**
-- Configure:
-  - **Evaluation interval:** (e.g. every 1m or 5m)
-  - **Condition:**  
-    ```
-    WHEN avg() OF query(A, 5m, now) > 80
-    ```
-  - **Name & Message**
-  - **Notification channel**
-- Click **Save**
+## Interpreting Results
+
+- Two result formats:
+  1. **Graph View** — plots time series
+  2. **Raw Data** — shows labels and values per time series
+
+- Example result:
+  - Node: `261`
+  - Metric: `read bytes` (unit: bytes)
+  - Flat value over time indicates no reads occurred
+  - Metric type: **counter**
+
+- In this example, 17 time series are returned, indicating 17 nodes
+- The graph can be toggled between line, dot, or bar view (default: line)
 
 ---
 
-### 6. Adjust Time Range & Refresh
-- Use the **time picker** at top:
-  - Last 5m, Last 1h, Custom, etc.
-- Set **Auto-refresh:** 5s, 10s, 30s, etc.
+## Working with Multiple Queries
+
+- Multiple queries can be added in the Explore pane
+- Example:
+  - Add a second metric query (e.g., `write bytes`)
+  - Results will show multiple values (e.g., Value A, Value B)
+  - Each value can be renamed for clarity
+  - You can hide specific queries to focus on others
 
 ---
 
-### 7. Save Your Dashboard
-- Click the **disk icon** or “Save dashboard”
-- Confirm name and location
+## Notes
 
----
-
-You now have a fully functional Grafana setup with:
-- Data sources configured
-- Dashboards imported
-- Alerts and notifications set
-- Time ranges and refresh intervals managed
+- Grafana may limit displayed series (e.g., “Only showing 20 series”) if too many are returned
+- This can happen when querying metrics with high cardinality
