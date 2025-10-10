@@ -103,7 +103,7 @@ We are using 0.0.0.0/0 in the lab so we can connect remotely. In a production de
 8.  Retrive your WEKA admin password from AWS Secrets Manager.  Navigate to AWS Secrets Manager and find your secret which is incudled in the Terraform output and press "Retrieve Secret Value" 
 
 ```{image} ./images/aws_secrets.png
-:width: 50%
+:width: 80%
 :class: zoomable
 :alt: WEKA Secret
 ```

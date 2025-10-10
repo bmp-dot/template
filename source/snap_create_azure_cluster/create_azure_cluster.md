@@ -103,7 +103,7 @@ We are using 0.0.0.0/0 in the lab so we can connect remotely. In a production de
 8.  Retrive your WEKA admin password from the Azure Key Vault.  Navigate to the newly created Key Vault >> Objects >> Secrets > weka password >> current version >> show secret value
 
 ```{image} ./images/weka_secret.png
-:width: 50%
+:width: 80%
 :class: zoomable
 :alt: WEKA Secret
 ```
