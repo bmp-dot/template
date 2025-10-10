@@ -31,6 +31,10 @@
 
 
 ## NO EXPLORE AVAILABLE***
+
+Only users with an editor or administrator role, or a specific data sources explore role, have access to Explore by default
+
+
 ## Exploring Custom Metrics
 
 ### Accessing the Explore Pane
