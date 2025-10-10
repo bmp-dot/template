@@ -34,7 +34,11 @@ Welcome
 
 Welcome to the WEKA Workshops!
 
+.. image:: ./images/WorkshopLogo.png
+   :alt: Description of image
+   :width: 400px  
+   :align: center
+
 Choose a workshop from the left-hand menu to get started.
 
 
-- 
