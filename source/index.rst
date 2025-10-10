@@ -27,7 +27,10 @@
    grafana_lab/grafana_lab
    
 .. _welcome:
-
+.. image:: ./images/WorkshopLogo.png
+   :alt: Description of image
+   :width: 400px  
+   :align: center
 --------------------------------
 Welcome
 --------------------------------
@@ -35,10 +38,4 @@ Welcome
 Welcome to the WEKA Workshops!
 
 Choose a workshop from the left-hand menu to get started.
-
-
-.. image:: ./images/WorkshopLogo.png
-   :alt: Description of image
-   :width: 400px  
-   :align: center
 
